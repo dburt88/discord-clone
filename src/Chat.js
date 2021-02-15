@@ -1,4 +1,5 @@
 import React from "react";
+import Message from "./Message";
 import "./Chat.css";
 import ChatHeader from "./ChatHeader";
 import {
@@ -13,7 +14,12 @@ function Chat() {
     <div className="chat">
       <ChatHeader />
 
-      <div className="chat__messages"></div>
+      <div className="chat__messages">
+        <Message />
+        <Message />
+        <Message />
+        <Message />
+      </div>
 
       <div className="chat__input">
         <AddCircle fontSize="large" />
