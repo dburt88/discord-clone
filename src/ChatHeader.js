@@ -9,13 +9,13 @@ import {
 } from "@material-ui/icons";
 import "./ChatHeader.css";
 
-function ChatHeader() {
+function ChatHeader({ channelName }) {
   return (
     <div className="chatHeader">
       <div className="chatHeader__left">
         <h3>
           <span className="chatHeader__hash">#</span>
-          Test Channel Name
+          {channelName}
         </h3>
       </div>
       <div className="chatHeader__right">
